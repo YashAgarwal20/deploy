@@ -28,7 +28,7 @@ connectionDb().then(
 
 const io=Socket(server,{
     cors:{
-        origin:"http://localhost:5173",
+        origin:process.env.BASE_URL,
         credentials:true,
     },
 });
